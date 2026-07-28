@@ -1,0 +1,23 @@
+Package: PhylaChrome
+Title: A systematic and deterministic tool for assigning colours that
+        capture taxonomic relationships in microbiome datasets
+Version: 1.0.0
+Authors@R: c(
+      person("Rachel", "Theriault", "rachel.theriault@sickkids.ca", role = c("aut")),
+      person("John", "Parkinson", "jparkin@sickkids.ca", role = "cre")
+    )
+Description: PhylaChrome is the first open-source, systematic, and deterministic program to assign colours that capture taxonomic 
+    relationships to bacterial taxa. Visualization of complex microbial communities such as microbiomes is essential to 
+    understanding the structure, function, and dynamics that help shape both the communities and the ecosystems in which they reside. 
+    Current visualizations rely on pre-defined colour palettes that limit intuitive analysis and comparisons across studies. 
+    PhylaChrome overcomes these limitations. 
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports: reticulate (>= 1.30.0)
+SystemRequirements: Python (>= 3.8)
+NeedsCompilation: no
+Packaged: 2026-07-28 17:21:09 UTC; rth
+Author: Rachel Theriault [aut]
+Maintainer: Rachel Theriault <rachel.theriault@sickkids.ca>

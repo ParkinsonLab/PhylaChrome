@@ -1,0 +1,8 @@
+BioProject: PRJNA1222153 
+Host Reference Genome for Alignment: GCF_011100685.1 
+Samples:
+  S1: SRR32305984 
+  S2: SRR32305991  
+  S3: SRR32306002 
+  S4: SRR32306013 
+  S5: SRR32306018 

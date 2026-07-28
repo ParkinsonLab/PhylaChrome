@@ -19,8 +19,12 @@ Please cite: [add Arxive link]
 - script <code>pip install scipy</code>
 
 ### Use R package:
+#### Pull from GitHub
 <code>remotes::install_github("ParkinsonLab/PhylaChrome", subdir = "RPackage")</code>
 
+#### Using Zip file:
+1. Download Zip file PhylaChrome_1.0.0.tar.gz
+2. Install the package: <code>remotes::install_local("your_path/PhylaChrome_1.0.0.tar", build = FALSE)</code>
 
 ### Use as Python Script:
 - Download 3 files from PythonScripts and place each file **in your working directory** (or edit the paths for default CSVs in PhylaChromeMain.py - not recommended)

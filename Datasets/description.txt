@@ -1,0 +1,3 @@
+The kraken2 reports from cleaned paired-end and singleton sequences are included. 
+
+For pre-processing details, please see the cited paper in README.md

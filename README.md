@@ -20,7 +20,12 @@ Please cite: [add Arxive link]
 
 ### Use R package:
 #### Pull from GitHub
-<code>remotes::install_github("ParkinsonLab/PhylaChrome", subdir = "RPackage")</code>
+```
+if (!requireNamespace("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github("ParkinsonLab/PhylaChrome", subdir = "RPackage")
+```
 
 #### Using Zip file:
 1. Download Zip file PhylaChrome_1.0.0.tar.gz

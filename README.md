@@ -1,6 +1,6 @@
 # PhylaChrome: A systematic and deterministic tool for assigning colours that capture taxonomic relationships in microbiome datasets 
 
-Please cite: [add Arxive link]
+Please cite: https://www.biorxiv.org/content/10.64898/2026.07.29.741550v1
 
 ## Highlights
 

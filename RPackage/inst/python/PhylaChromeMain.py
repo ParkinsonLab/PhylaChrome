@@ -1013,7 +1013,7 @@ def getRequestedColours(database_name: str, database_version: Union[str, list], 
     # if a database name was requested that is not supported stop the program and return an error
     else:
         print("Error: Requested database" +  database_name + " is not available")
-        return 1
+        return None
     
     if isinstance(requested_taxa, pd.DataFrame):
         requested_colours = requested_taxa
@@ -1021,6 +1021,7 @@ def getRequestedColours(database_name: str, database_version: Union[str, list], 
         requested_colours = pd.read_csv(requested_taxa, header='infer')
     else:
         print("ERROR: requested taxa must be either a string that is the path to a CSV or a DataFrame")
+        return None
     
 
     if mode == "global":
@@ -1029,6 +1030,7 @@ def getRequestedColours(database_name: str, database_version: Union[str, list], 
          requested = generateColoursSpecific(provided_colours, requested_colours, database_name, database_version)
     else:
         print("Requested mode not available. Please use global or dataset-specific")
+        return None
 
 
     # if a save name was provided, save the DataFrame

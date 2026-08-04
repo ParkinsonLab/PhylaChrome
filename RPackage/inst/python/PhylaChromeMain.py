@@ -461,12 +461,12 @@ def getDefaultColours(database_name: str, save_name: str):
     SCRIPT_DIR = Path(__file__).resolve().parent
      
     if database_name == "ncbi":
-        provided_colors = pd.read_csv(SCRIPT_DIR / "phylaNCBIMay2026.csv", header='infer')
-        provided_colors.to_csv(save_name, index=False)
+        provided_colours = pd.read_csv(SCRIPT_DIR / "phylaNCBIMay2026.csv", header='infer')
+        provided_colours.to_csv(save_name, index=False)
 
     elif database_name == "gtdb":
-        provided_colors = pd.read_csv(SCRIPT_DIR / "phylaGTDB226.csv", header='infer')
-        provided_colors.to_csv(save_name, index=False)
+        provided_colours = pd.read_csv(SCRIPT_DIR / "phylaGTDB226.csv", header='infer')
+        provided_colours.to_csv(save_name, index=False)
 
     else:
         print("Error: Requested database " + database_name + " is not available")
@@ -998,11 +998,11 @@ def getRequestedColours(database_name: str, database_version: Union[str, list], 
 
         # if no parent colours were provided, use default colours and warn user
         if (not name_provided_colours) and database_name == "ncbi":
-            provided_colors = pd.read_csv(SCRIPT_DIR / "phylaNCBIMay2026.csv", header='infer')
+            provided_colours = pd.read_csv(SCRIPT_DIR / "phylaNCBIMay2026.csv", header='infer')
             print("Using default colours for NCBI as of May 2026")
         
         elif (not name_provided_colours)  and database_name == "gtdb":
-            provided_colors = pd.read_csv(SCRIPT_DIR / "phylaGTDB226.csv", header='infer')
+            provided_colours = pd.read_csv(SCRIPT_DIR / "phylaGTDB226.csv", header='infer')
             print("Using default colours for GTDB release 226")
 
         # if parent colours were provided, use the colours requested by user

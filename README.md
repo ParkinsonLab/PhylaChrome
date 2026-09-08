@@ -16,7 +16,7 @@ Please cite: https://www.biorxiv.org/content/10.64898/2026.07.29.741550v1
 - chromato <code>pip install chromato</code>
 - pandas <code>pip install pandas</code>
 - multitax <code>pip install multitax</code>
-- script <code>pip install scipy</code>
+- scipy <code>pip install scipy</code>
 
 ### Use R package:
 #### Pull from GitHub
